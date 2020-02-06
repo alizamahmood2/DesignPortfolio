@@ -175,7 +175,6 @@ li {
 
 /*.item {
   position: relative;
-
 }*/
 
 .name {
@@ -333,7 +332,6 @@ ul {
   color: white;
   text-align: center;
 }
-
 .dropdown-content {
   display: none;
   position: fixed;
@@ -342,19 +340,15 @@ ul {
   width: 300px;
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 12px 8px 12px;
   display: block;
   text-align: right;
 }
-
 .dropdown-content a:hover {
   color: #FF859F;
   }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }*/
-
