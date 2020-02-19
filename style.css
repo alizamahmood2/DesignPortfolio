@@ -1,33 +1,43 @@
 body{
   margin: 1%;
-  font-family: "overpass mono", monospace;
-
-  background: white;
+/*  font-family: "brandon-grotesque",sans-serif;*/
+   font-family: "overpass mono", monospace;
+  background: #FFF7F0;
   background-size: 400% 400%;
   }
 
 .gridcontainer {
   display: grid;
   grid-row-gap: 60px;
-  grid-column-gap: 0px;
-  grid-template-columns: auto;
-  padding-top:50px; 
+  grid-column-gap: 30px;
+  grid-template-columns: auto auto auto;
+  padding-top:20px; 
   padding-left:125px;
-  padding-bottom:50px;
+  padding-bottom:125px;
   padding-right:125px;
-  float: center;
 }
 
 .grid-container2 {
   display: grid;
   grid-template-columns: 40vw 20vw 25vw;
   grid-gap: 10px;
-  background-color: white;
+  background-color: #FFF7F0;
 }
 
 .grid-container2 > div {
   text-align: left;
-/*  font-size: 14px;*/
+}
+
+.categories {
+  font-family: "overpass mono", monospace;
+  display: inline;
+  padding-left: 146px;
+  padding-top: 80px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: inline-block;
 }
 
 footer {
@@ -57,13 +67,11 @@ footer {
   padding-bottom: 10px;
   padding-right: 10vw;
   padding-left: 0px;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
-/*dropdown style starts*/
-
 .dropbtn {
-  background-color: white;
+  background-color: #FFF7F0;
   font-family: "overpass mono", monospace;
   font-size: 12.5px;
   text-transform: uppercase;
@@ -78,21 +86,19 @@ footer {
 }
 
 .dropdown-content {
-   display: none;
+  display: none;
   position: absolute;
   top: 30px;
-/*  right: 10px;
-  width: 300px;*/
-  background-color: white;
+  background-color: #FFF7F0;
   font-family: "overpass mono", monospace;
   font-size: 12.5px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 500;
-
   min-width: 98vw;
   z-index: 3;
 }
+
 
 .dropdown-content a {
   color: black;
@@ -101,7 +107,9 @@ footer {
   display: block;
 }
 
-.dropdown-content a:hover {color: #FF859F;}
+.dropdown-content a:hover {
+  color: #FF859F;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -110,6 +118,8 @@ footer {
 .dropdown:hover .dropbtn {
   color: #FF859F;
 }
+
+
 
 .dot {
   font-family: "overpass mono", monospace;
@@ -126,14 +136,41 @@ footer {
   color: black;
 }
 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 25px;
+}
+
 .name {
-  font-size: 12.5px;
+
+/*    display: inherit;*/
+    font-size: 12.5px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding-left: 44%;
   padding-top: 9px;
+
 }
+
+li {
+  display: inline;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  padding: 8px 12px 0px 12px;
+}
+
+.item {
+  padding: 20px;
+  display: block;
+}
+
+
 
 .about {
   float: right;
@@ -145,156 +182,79 @@ footer {
 
 }
 
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 25px;
- /* padding-bottom: 10px;*/
+.names {
+  font-family: "overpass mono", monospace;
+   font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-top: 15px;
+  line-height: 1.5;
+  display: none;
 }
 
-li {
-  display: inline;
-  float: right;
-   font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  display: inline-block;
-    padding: 12px 12px 2px 12px;
+  
+img:hover + .names {
+  display: block;
+  position: absolute;
 }
 
 
 img {
-  margin: auto;
   display: block;
-  width: 70vw;
+  width: 20vw;
   height: auto;
 }
-
-/*#portrait {
-  width: auto;
-  height: vertical;
-}*/
-
-
-.alltext {
-  margin: auto;
-  width: 30vw;
-  padding-top:70px;
-  padding-bottom: 0px;
-}
-
-.text2 {
-  margin: auto;
-  width: 30vw;
-  padding-top:0px;
-}
-
-
-.boldtext {
-font-weight: bold;
-text-transform: uppercase;
-}
-
-
-.bigtext {
-font-weight: bold;
-font-size: 18px;
-color: #D67A34;
-text-transform: uppercase;
-}
-
-
-.endtext {
-  line-height: 19px;
-}
-
-.italic {
-  font-style: italic;
-}
-
-
-h1 {
-  font-family: "brandon-grotesque",sans-serif;
-  color: #DB5858;
-  font-size: 20px;
-  font-style: bold;
-  font-weight: 545;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-    text-rendering: optimizeLegibility;
-
-}
-
-h3 {
-  font-family: "overpass mono", monospace;
-  color: grey;
-  font-size: 11px;
-  text-rendering: optimizeLegibility;
-  padding-bottom: 40px;
-  line-height: 80%;
-}
-
-h2 {
-  font-family: "brandon-grotesque",sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  font-style: bold;
-  letter-spacing: 0.1em;
-    text-rendering: optimizeLegibility;
-    color: #9C3A48;
-}
-
-p {
-
- font-family: "overpass mono", monospace;
-  color: black;
-  font-size: 13px;
-  font-weight: 200;
-  text-rendering: optimizeLegibility;
-  line-height: 125%;
-
-
-}
-
-::selection {
-    background: transparent;
-    color: #FF859F;
-}
-
 
 a:link {
     color:  black;
     text-decoration: none;
 }
 
-/* visited link */
 a:visited {
     color:  black;
     text-decoration: none;
 }
 
-/* mouse over link */
 a:hover {
     color: #FF859F;
     text-decoration: none;
 }
 
-/* selected link */
 a:active {
     color:  black;
     text-decoration: none;
 }
 
+.aImg:link {
+  color:  grey;
+  text-decoration: none;
 
-ul {
-  overflow: hidden;
 }
 
-.hover:hover {
-   color: #FF859F;
+.aImg:visited {
+    color:  grey;
     text-decoration: none;
 }
+
+.aImg:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.aImg:active {
+    color:  black;
+    text-decoration: none;
+}
+
+ul {
+  overflow: hidden; 
+}
+
+::selection {
+    background: transparent;
+    color: #FFB871;
+}
+
 
 
