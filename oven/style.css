@@ -1,0 +1,431 @@
+body{
+  margin: 1%;
+  font-family: "overpass mono", monospace;
+
+  background: white;
+  background-size: 400% 400%;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+.democursor {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: grey;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: white;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 12%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.gridcontainer {
+  display: grid;
+  grid-row-gap: 60px;
+  grid-column-gap: 0px;
+  grid-template-columns: auto;
+  padding-top:50px; 
+  padding-left:125px;
+  padding-bottom:50px;
+  padding-right:125px;
+  float: center;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 40vw 20vw 25vw;
+  grid-gap: 10px;
+  background-color: white;
+}
+
+.grid-container2 > div {
+  text-align: left;
+/*  font-size: 14px;*/
+}
+
+footer {
+  padding-bottom: 15px;
+  font-family: "overpass mono", monospace;
+}
+
+.endline {
+  padding-left: 20px;
+}
+
+.foot {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.footlink {
+  font-weight: 600;
+}
+
+footer {
+  padding-bottom: 15px;
+}
+
+.endline {
+  padding-left: 20px;
+}
+
+.foot {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.footlink {
+  font-weight: 550;
+}
+
+  .droplist {
+  float: left;
+  padding-bottom: 10px;
+  padding-right: 10vw;
+  padding-left: 0px;
+  padding-top: 10px;
+}
+
+/*dropdown style starts*/
+
+.dropbtn {
+  background-color: white;
+  font-family: "overpass mono", monospace;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: black;
+  border: none;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+   display: none;
+  position: absolute;
+  top: 30px;
+/*  right: 10px;
+  width: 300px;*/
+  background-color: white;
+  font-family: "overpass mono", monospace;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+
+  min-width: 98vw;
+  z-index: 3;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 35px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {color: #FF859F;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #FF859F;
+}
+
+.dot {
+  font-family: "overpass mono", monospace;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  padding-left: 12px;
+  padding-top: 9px;
+}
+
+.dot:hover {
+  color: black;
+}
+
+.name {
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-left: 44%;
+  padding-top: 9px;
+}
+
+.about {
+  float: right;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-top: 9px;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 25px;
+ /* padding-bottom: 10px;*/
+}
+
+li {
+  display: inline;
+  float: right;
+   font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: inline-block;
+    padding: 12px 12px 2px 12px;
+}
+
+
+img {
+  margin: auto;
+  display: block;
+  width: 70vw;
+  height: auto;
+}
+
+/*#portrait {
+  width: auto;
+  height: vertical;
+}*/
+
+
+.alltext {
+  margin: auto;
+  width: 30vw;
+  padding-top:70px;
+  padding-bottom: 0px;
+}
+
+.text2 {
+  margin: auto;
+  width: 30vw;
+  padding-top:0px;
+}
+
+.boldtext {
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.endtext {
+  line-height: 19px;
+}
+
+h1 {
+  font-family: "brandon-grotesque",sans-serif;
+  color: #DB5858;
+  font-size: 20px;
+  font-style: bold;
+  font-weight: 545;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+    text-rendering: optimizeLegibility;
+
+}
+
+h3 {
+  font-family: "overpass mono", monospace;
+  color: grey;
+  font-size: 11px;
+  text-rendering: optimizeLegibility;
+  padding-bottom: 40px;
+  line-height: 80%;
+}
+
+h2 {
+  font-family: "brandon-grotesque",sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: bold;
+  letter-spacing: 0.1em;
+    text-rendering: optimizeLegibility;
+    color: #9C3A48;
+}
+
+p {
+
+ font-family: "overpass mono", monospace;
+  color: black;
+  font-size: 13px;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+  line-height: 125%;
+
+
+}
+
+.italic {
+  font-style: italic;
+}
+
+::selection {
+    background: transparent;
+    color: #FF859F;
+}
+
+
+a:link {
+    color:  black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color:  black;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF859F;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color:  black;
+    text-decoration: none;
+}
+
+
+ul {
+  overflow: hidden;
+}
+
+.hover:hover {
+   color: #FF859F;
+    text-decoration: none;
+}
+
+
+/*.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top: 62px;
+  right: 10px;
+  width: 300px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px 8px 12px;
+  display: block;
+  text-align: right;
+}
+
+.dropdown-content a:hover {
+  color: #FF859F;
+  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}*/
+
