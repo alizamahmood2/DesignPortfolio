@@ -2,7 +2,7 @@ body{
   margin: 1%;
   font-family: "overpass mono", monospace;
 
-  background: white;
+  background: black;
   background-size: 400% 400%;
   }
 
@@ -22,7 +22,7 @@ body{
   display: grid;
   grid-template-columns: 40vw 20vw 25vw;
   grid-gap: 10px;
-  background-color: white;
+  background-color: black;
 }
 
 .grid-container2 > div {
@@ -52,6 +52,11 @@ footer {
   font-weight: 600;
 }
 
+.video {
+  margin: auto;
+float: center;
+}
+
 
 .droplist {
   float: left;
@@ -64,12 +69,12 @@ footer {
 /*dropdown style starts*/
 
 .dropbtn {
-  background-color: white;
+  background-color: black;
   font-family: "overpass mono", monospace;
   font-size: 12.5px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: black;
+  color: #C7C7C5;
   border: none;
 }
 
@@ -84,7 +89,7 @@ footer {
   top: 30px;
 /*  right: 10px;
   width: 300px;*/
-  background-color: white;
+  background-color: black;
   font-family: "overpass mono", monospace;
   font-size: 12.5px;
   text-transform: uppercase;
@@ -96,7 +101,7 @@ footer {
 }
 
 .dropdown-content a {
-  color: black;
+  color: #C7C7C5;
   padding: 8px 35px;
   text-decoration: none;
   display: block;
@@ -124,7 +129,7 @@ footer {
 }
 
 .dot:hover {
-  color: black;
+  color: #C7C7C5;
 }
 
 .name {
@@ -202,7 +207,7 @@ text-transform: uppercase;
 }
 
 h1 {
-  font-family: "brandon-grotesque",sans-serif;
+  font-family: "overpass mono", monospace;
   color: #DB5858;
   font-size: 20px;
   font-style: bold;
@@ -224,7 +229,7 @@ h3 {
 }
 
 h2 {
-  font-family: "brandon-grotesque",sans-serif;
+  font-family: "overpass mono", monospace;
   font-weight: 400;
   font-size: 14px;
   font-style: bold;
@@ -236,7 +241,7 @@ h2 {
 p {
 
  font-family: "overpass mono", monospace;
-  color: black;
+  color: #C7C7C5;
   font-size: 13px;
   font-weight: 200;
   text-rendering: optimizeLegibility;
@@ -252,13 +257,13 @@ p {
 
 
 a:link {
-    color:  black;
+    color:  #C7C7C5;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color:  black;
+    color:  #C7C7C5;
     text-decoration: none;
 }
 
@@ -270,7 +275,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color:  black;
+    color:  #C7C7C5;
     text-decoration: none;
 }
 
