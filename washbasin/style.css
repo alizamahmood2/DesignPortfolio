@@ -89,6 +89,13 @@ body{
   padding-top: 9px;
 }
 
+.caption {
+  margin: auto;
+  width: 27vw;
+  line-height: 1;
+
+}
+
 .about {
   float: right;
   font-size: 12.5px;
@@ -225,14 +232,11 @@ text-transform: uppercase;
   font-style: italic;
 }
 
-.caption {
-  margin: auto;
-  width: 10vw;
-}
+
 
 
 h1 {
-  font-family: "brandon-grotesque",sans-serif;
+  font-family: "overpass mono", monospace;
   color: #DB5858;
   font-size: 20px;
   font-style: bold;
@@ -253,7 +257,7 @@ h3 {
 }
 
 h2 {
-  font-family: "brandon-grotesque",sans-serif;
+  font-family: "overpass mono", monospace;
   font-weight: 400;
   font-size: 14px;
   font-style: bold;
