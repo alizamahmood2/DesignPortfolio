@@ -122,6 +122,14 @@ footer {
   padding-top: 9px;
 }
 
+.caption {
+  text-align: center;
+  padding-left: 40%;
+  line-height: 1;
+  width: 17vw;
+}
+
+
 .dot:hover {
   color: black;
 }
@@ -201,7 +209,7 @@ text-transform: uppercase;
 }
 
 h1 {
-  font-family: "brandon-grotesque",sans-serif;
+  font-family: "overpass mono", monospace;
   color: #DB5858;
   font-size: 20px;
   font-style: bold;
@@ -222,7 +230,7 @@ h3 {
 }
 
 h2 {
-  font-family: "brandon-grotesque",sans-serif;
+  font-family: "overpass mono", monospace;
   font-weight: 400;
   font-size: 14px;
   font-style: bold;
